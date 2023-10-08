@@ -26,12 +26,31 @@
 
 const uint32_t ftw[6][6] =
 {   
+// SQ6EMM/B 1296.805 MHz mark
         {0x30206B88, 0xA3D8001, 0xD108002, 0x43, 0x4},   // PI4 tone0       * The relevant Frequency Tuning Words
         {0x30206B88, 0xB020001, 0xD108002, 0x43, 0x4},   // PI4 tone1       * Six FTW are needed for a PI4 + CW + carrier sequence
         {0x30206B88, 0xBC68001, 0xD108002, 0x43, 0x4},   // PI4 tone2       * Set each FTW set to the number of bytes need
         {0x30206B88, 0xC8B8001, 0xD108002, 0x43, 0x4},   // PI4 tone3       * PI4: index 0-3. CW FSK: index 4. CW carrier: index 5
         {0x30206B88, 0x9500001, 0xD108002, 0x43, 0x4},   // CW -FSK tone    *
         {0x30206B88, 0xA9F8001, 0xD108002, 0x43, 0x4}    // CW carrier tone * Example: 1296,805 MHz using a 10 MHZ reference
+// SR6LB 1296.785 MHz mark
+/*
+        {0x30206B68, 0x8B40001, 0xD108002, 0x43, 0x4},   // PI4 tone0       * The relevant Frequency Tuning Words
+        {0x30206B68, 0x9788001, 0xD108002, 0x43, 0x4},   // PI4 tone1       * Six FTW are needed for a PI4 + CW + carrier sequence
+        {0x30206B68, 0xA3D8001, 0xD108002, 0x43, 0x4},   // PI4 tone2       * Set each FTW set to the number of bytes need
+        {0x30206B68, 0xB020001, 0xD108002, 0x43, 0x4},   // PI4 tone3       * PI4: index 0-3. CW FSK: index 4. CW carrier: index 5
+        {0x30206B68, 0x7C70001, 0xD108002, 0x43, 0x4},   // CW -FSK tone    *
+        {0x30206B68, 0x9168001, 0xD108002, 0x43, 0x4}    // CW carrier tone * Example: 1296,805 MHz using a 10 MHZ reference
+*/
+// SR6LB 10368.785 MHz mark
+/*
+        {0x30566810, 0x61A0001, 0xD508002, 0x43, 0x4},   // PI4 tone0       * The relevant Frequency Tuning Words
+        {0x30566810, 0x65B8001, 0xD508002, 0x43, 0x4},   // PI4 tone1       * Six FTW are needed for a PI4 + CW + carrier sequence
+        {0x30566810, 0x69D0001, 0xD508002, 0x43, 0x4},   // PI4 tone2       * Set each FTW set to the number of bytes need
+        {0x30566810, 0xC8B8001, 0xD508002, 0x43, 0x4},   // PI4 tone3       * PI4: index 0-3. CW FSK: index 4. CW carrier: index 5
+        {0x30566810, 0x5CB8001, 0xD508002, 0x43, 0x4},   // CW -FSK tone    *
+        {0x30566810, 0x63A0001, 0xD508002, 0x43, 0x4}    // CW carrier tone * Example: 1296,805 MHz using a 10 MHZ reference
+*/
 };
 
 /*
