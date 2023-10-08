@@ -69,9 +69,9 @@ byte locatorLength;
 //
 // Change this block to match the messages, frequency device and GPS receiver
 //                    12345678
-char pi4Message[9] = "SQ6EMM/B";                    // The PI4 message. Must be 8 charaters, left justified and padded with spaces if needed
+char pi4Message[9] = "SR6LB   ";                    // The PI4 message. Must be 8 charaters, left justified and padded with spaces if needed
 
-char call[] = "SQ6EMM/B";                               // The CW call. Only A-Z, 0-9 and /
+char call[] = "SR6LB";                               // The CW call. Only A-Z, 0-9 and /
 char locator[] = "JO81CJ";                          // The CW locator. Only A-X, 0-9 and /
 
 const int gpsBaudRate = 9600;                       // The GPS NMEA Baud rate for the $GPRMC data frame
